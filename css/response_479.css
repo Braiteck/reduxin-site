@@ -1,0 +1,385 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+
+        border-radius: 0;
+    }
+
+
+    .accordion_item .head
+    {
+        padding: 16px 84px 16px 20px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 18px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 20px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 20px 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 12px 0;
+    }
+
+
+    header .logo
+    {
+        font-size: 13px;
+    }
+
+    header .logo > * + *
+    {
+        margin-left: 16px;
+    }
+
+    header .logo .sep
+    {
+        height: 28px;
+    }
+
+    header .logo img
+    {
+        height: 20px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-top: 40px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 480px;
+    }
+
+
+    .first_section .notice .name
+    {
+        font-size: 18px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+    .first_section .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .first_section .image
+    {
+        left: 32px;
+
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+
+    /*-------------------
+        First section 2
+    -------------------*/
+    .first_section_2
+    {
+        padding-top: 40px;
+    }
+
+
+    .first_section_2 .bg
+    {
+        width: 480px;
+    }
+
+
+    .first_section_2 .title
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .first_section_2 .title br ~ br
+    {
+        display: none;
+    }
+
+
+    .first_section_2 .image
+    {
+        left: 32px;
+
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .about_info .item .title
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .about_info .profile
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .about_info .profile span
+    {
+        width: 220px;
+    }
+
+
+
+    /*------------------
+        About info 2
+    ------------------*/
+    .about_info_2 .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .about_info_2 .item .title
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+
+    /*-------------------
+        Effectiveness
+    -------------------*/
+    .effectiveness .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .effectiveness .item .icon
+    {
+        width: 64px;
+        height: 64px;
+        margin-right: 16px;
+        padding: 12px;
+    }
+
+    .effectiveness .item .icon + *
+    {
+        max-width: calc(100% - 80px);
+    }
+
+
+
+    /*---------------------
+        Effectiveness 2
+    ---------------------*/
+    .effectiveness_2 .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .effectiveness_2 .bottom
+    {
+        font-size: 14px;
+
+        margin-top: 36px;
+
+        border-radius: 8px;
+    }
+
+    .effectiveness_2 .bottom > div
+    {
+        padding: 16px 16px 16px 54px;
+    }
+
+    .effectiveness_2 .bottom .name
+    {
+        font-size: 17px;
+    }
+
+    .effectiveness_2 .bottom .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+
+    /*-----------------
+        App. scheme
+    -----------------*/
+    .app_scheme .block_title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Add question
+    ------------------*/
+    .add_question .btn
+    {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+
+    .add_question .btn img
+    {
+        height: 43px;
+    }
+
+
+
+    /*-----------
+        Notes
+    -----------*/
+    .notes .btn
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .btns > *
+    {
+        width: 100%;
+    }
+
+    footer .btns > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

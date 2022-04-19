@@ -1,0 +1,468 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        min-height: 72px;
+        padding: 16px 92px 16px 22px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 19px;
+        line-height: calc(100% + 5px);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 22px;
+
+        width: 44px;
+        height: 44px;
+    }
+
+    .accordion_item .head .icon .plus,
+    .accordion_item .head .icon .minus
+    {
+        width: 18px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 22px 22px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        height: 22px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 24px;
+        padding-top: 32px;
+    }
+
+
+    .page_title
+    {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-top: 44px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 768px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 18px;
+
+        margin-top: 28px;
+    }
+
+
+    .first_section .pluses
+    {
+        font-size: 18px;
+    }
+
+    .first_section .pluses > * + *
+    {
+        margin-top: 16px;
+    }
+
+    .first_section .pluses .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+    .first_section .pluses span
+    {
+        width: calc(100% - 32px);
+    }
+
+
+    .first_section .image
+    {
+        left: 40px;
+
+        width: 90%;
+    }
+
+
+
+    /*-------------------
+        First section 2
+    -------------------*/
+    .first_section_2
+    {
+        padding-top: 44px;
+    }
+
+
+    .first_section_2 .bg
+    {
+        width: 768px;
+    }
+
+
+    .first_section_2 .data
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+
+    .first_section_2 .title
+    {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+
+    .first_section_2 .pluses
+    {
+        font-size: 18px;
+    }
+
+    .first_section_2 .pluses > * + *
+    {
+        margin-top: 16px;
+    }
+
+    .first_section_2 .pluses .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+    .first_section_2 .pluses span
+    {
+        width: calc(100% - 32px);
+    }
+
+
+    .first_section_2 .image
+    {
+        left: 40px;
+
+        width: 90%;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .about_info .block_title
+    {
+        font-size: 25px;
+        line-height: 33px;
+
+        margin-bottom: 36px;
+    }
+
+
+    .about_info .item
+    {
+        width: 100%;
+    }
+
+    .about_info .item ~ .item
+    {
+        margin-top: 20px;
+    }
+
+    .about_info .item .items > *
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .about_info .profile
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        justify-content: center;
+    }
+
+    .about_info .profile span
+    {
+        width: 240px;
+    }
+
+
+
+    /*------------------
+        About info 2
+    ------------------*/
+    .about_info_2 .block_title
+    {
+        font-size: 25px;
+        line-height: 33px;
+
+        margin-bottom: 36px;
+    }
+
+
+    .about_info_2 .item
+    {
+        width: 100%;
+    }
+
+
+    .about_info_2 .item .title
+    {
+        margin-bottom: 20px;
+    }
+
+    .about_info_2 .item .title br
+    {
+        display: none;
+    }
+
+
+    .about_info_2 .item .items > *
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .about_info_2 .item .items > * + *
+    {
+        margin-top: 16px;
+    }
+
+    .about_info_2 .item .items br
+    {
+        display: none;
+    }
+
+
+    .about_info_2 .image
+    {
+        width: 75%;
+        margin: 40px auto;
+    }
+
+
+
+    /*-------------------
+        Effectiveness
+    -------------------*/
+    .effectiveness
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .effectiveness .block_title
+    {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+
+    .effectiveness .item
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*---------------------
+        Effectiveness 2
+    ---------------------*/
+    .effectiveness_2 .block_title
+    {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+
+    .effectiveness_2 .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .effectiveness_2 .item
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        App. scheme
+    -----------------*/
+    .app_scheme
+    {
+        padding-top: 40px;
+    }
+
+
+    .app_scheme .block_title
+    {
+        font-size: 25px;
+        line-height: 33px;
+
+        margin-bottom: 36px;
+    }
+
+
+    .app_scheme .tablet
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .app_scheme .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-top: 28px;
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Add question
+    ------------------*/
+    .add_question.bg_white
+    {
+        padding: 44px 0;
+    }
+
+
+    .add_question .btn
+    {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+
+    .add_question .btn img
+    {
+        height: 45px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col_left
+    {
+        width: 100%;
+    }
+
+
+    footer .btns
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
