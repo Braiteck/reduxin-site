@@ -474,6 +474,76 @@ button
 
 
 
+/*-------------
+    Animate
+-------------*/
+.animate
+{
+    visibility: hidden;
+
+    transition: opacity .5s linear, visibility .5s linear, transform .5s linear;
+
+    opacity: 0;
+}
+
+.animate.animated
+{
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+.animate.delay
+{
+    transition-delay: .3s !important;
+}
+
+.animate.delay2
+{
+    transition-delay: .6s !important;
+}
+
+.animate.delay3
+{
+    transition-delay: .9s !important;
+}
+
+
+.fadeInUp
+{
+    transform: translateY(95%);
+}
+
+.animated.fadeInUp
+{
+    transform: translateX(0);
+}
+
+
+.fadeInLeft
+{
+    transform: translateX(-95%);
+}
+
+.animated.fadeInLeft
+{
+    transform: translateX(0);
+}
+
+
+.fadeInRight
+{
+    transform: translateX(95%);
+}
+
+.animated.fadeInRight
+{
+    transform: translateX(0);
+}
+
+
+
 /*------------
     Header
 ------------*/
