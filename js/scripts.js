@@ -98,27 +98,22 @@ $(() => {
 				$('body').css('cursor', 'default')
 			}
 		})
-
-
-		// Закрытие моб. меню свайпом справо на лево
-		let ts
-
-		$('body').on('touchstart', (e) => { ts = e.originalEvent.touches[0].clientX })
-
-		$('body').on('touchend', (e) => {
-			let te = e.originalEvent.changedTouches[0].clientX
-
-			if ($('body').hasClass('menu_open') && ts > te + 50) {
-				// Свайп справо на лево
-				$('.mob_header .mob_menu_btn').removeClass('active')
-				$('body').removeClass('menu_open')
-				$('header').removeClass('show')
-				$('.overlay').fadeOut(300)
-			} else if (ts < te - 50) {
-				// Свайп слева на право
-			}
-		})
 	}
+})
+
+
+
+$(window).on('load', () => {
+	// Фикс. шапка
+	headerInit = true,
+		headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > 0
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
 })
 
 
@@ -136,9 +131,34 @@ $(window).on('resize', () => {
 		}
 
 
+		// Фикс. шапка
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > 0
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
+
+
 		// Перезапись ширины окна
 		WW = $(window).width()
 	}
+})
+
+
+
+$(window).scroll(() => {
+	// Фикс. шапка
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > 0
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
 })
 
 

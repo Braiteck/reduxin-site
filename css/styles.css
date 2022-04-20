@@ -682,37 +682,6 @@ header.fixed
     position: fixed;
 
     margin: 0;
-
-    -webkit-animation: moveDown .5s;
-            animation: moveDown .5s;
-}
-
-
-@-webkit-keyframes moveDown
-{
-    0%
-    {
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%);
-    }
-}
-
-@-moz-keyframes moveDown
-{
-    0%
-    {
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%);
-    }
-}
-
-@keyframes moveDown
-{
-    0%
-    {
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%);
-    }
 }
 
 
