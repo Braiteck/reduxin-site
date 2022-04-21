@@ -16,19 +16,19 @@
     -------------*/
     .fadeInUp
     {
-        transform: translateY(90%);
+        transform: translateY(85%);
     }
 
 
     .fadeInLeft
     {
-        transform: translateX(-90%);
+        transform: translateX(-85%);
     }
 
 
     .fadeInRight
     {
-        transform: translateX(90%);
+        transform: translateX(85%);
     }
 
 

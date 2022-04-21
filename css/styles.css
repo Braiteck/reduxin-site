@@ -512,7 +512,7 @@ button
 
 .fadeInUp
 {
-    transform: translateY(95%);
+    transform: translateY(90%);
 }
 
 .animated.fadeInUp
@@ -523,7 +523,7 @@ button
 
 .fadeInLeft
 {
-    transform: translateX(-95%);
+    transform: translateX(-90%);
 }
 
 .animated.fadeInLeft
@@ -534,7 +534,7 @@ button
 
 .fadeInRight
 {
-    transform: translateX(95%);
+    transform: translateX(90%);
 }
 
 .animated.fadeInRight
