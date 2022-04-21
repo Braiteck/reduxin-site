@@ -1145,38 +1145,22 @@ header.fixed
 
 .first_section .notice
 {
-    color: #fff;
-    font-size: 21px;
+    color: #d5102c;
+    font-size: 33px;
     font-weight: 700;
     line-height: 100%;
 
-    position: relative;
-
     display: none;
 
-    padding: 20px 20px 20px 100px;
+    padding: 16px 0;
 
-    border-radius: 15px;
-    background: #c5133d;
-}
-
-.first_section .notice .icon
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-
-    display: block;
-
-    width: 66px;
-    height: 60px;
-    margin: auto;
+    white-space: nowrap;
 }
 
 .first_section .notice .name
 {
-    font-size: 28px;
+    font-size: 57px;
+    line-height: 73px;
 
     margin-bottom: 8px;
 }

@@ -132,12 +132,6 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
     /*---------------
         Page head
     ---------------*/
@@ -153,18 +147,6 @@
         font-size: 43px;
         line-height: 55px;
     }
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
 
 
 
@@ -210,26 +192,17 @@
 
     .first_section .notice
     {
-        font-size: 16px;
+        font-size: 25px;
 
-        padding: 16px 16px 16px 76px;
-
-        border-radius: 12px;
-    }
-
-    .first_section .notice .icon
-    {
-        left: 16px;
-
-        width: 54px;
-        height: 49px;
+        padding: 11px 0;
     }
 
     .first_section .notice .name
     {
-        font-size: 21px;
+        font-size: 43px;
+        line-height: 55px;
 
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
 

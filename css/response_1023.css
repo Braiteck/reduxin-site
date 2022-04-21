@@ -111,36 +111,6 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
-
-
-
-    /*----------------
-        Typography
-    ----------------*/
-
-
-
     /*-------------------
         First section
     -------------------*/
@@ -162,6 +132,20 @@
         padding-top: 0;
 
         order: 2;
+    }
+
+
+    .first_section .notice
+    {
+        font-size: 18px;
+
+        padding: 9px 0;
+    }
+
+    .first_section .notice .name
+    {
+        font-size: 32px;
+        line-height: 40px;
     }
 
 

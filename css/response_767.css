@@ -66,12 +66,6 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
     /*---------------
         Page head
     ---------------*/
@@ -90,24 +84,6 @@
 
 
 
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
-
-
-
-    /*----------------
-        Typography
-    ----------------*/
-
-
-
     /*-------------------
         First section
     -------------------*/
@@ -120,6 +96,20 @@
     .first_section .bg
     {
         width: 768px;
+    }
+
+
+    .first_section .notice
+    {
+        font-size: 17px;
+    }
+
+    .first_section .notice .name
+    {
+        font-size: 30px;
+        line-height: 38px;
+
+        margin-bottom: 3px;
     }
 
 

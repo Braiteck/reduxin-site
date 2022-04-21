@@ -28,6 +28,28 @@
 
 
 
+    /*-------------
+        Animate
+    -------------*/
+    .fadeInUp
+    {
+        transform: translateY(75%);
+    }
+
+
+    .fadeInLeft
+    {
+        transform: translateX(-75%);
+    }
+
+
+    .fadeInRight
+    {
+        transform: translateX(75%);
+    }
+
+
+
     /*---------------
         Accordion
     ---------------*/
@@ -99,12 +121,6 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
     /*---------------
         Page head
     ---------------*/
@@ -120,18 +136,6 @@
         font-size: 34px;
         line-height: 44px;
     }
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
 
 
 
@@ -169,10 +173,17 @@
     }
 
 
-    .first_section .notice .icon
+    .first_section .notice
     {
-        width: 44px;
-        height: auto;
+        font-size: 20px;
+
+        padding: 10px 0;
+    }
+
+    .first_section .notice .name
+    {
+        font-size: 34px;
+        line-height: 44px;
     }
 
 

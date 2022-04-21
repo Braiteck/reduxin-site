@@ -11,6 +11,28 @@
 
 
 
+    /*-------------
+        Animate
+    -------------*/
+    .fadeInUp
+    {
+        transform: translateY(90%);
+    }
+
+
+    .fadeInLeft
+    {
+        transform: translateX(-90%);
+    }
+
+
+    .fadeInRight
+    {
+        transform: translateX(90%);
+    }
+
+
+
     /*---------------
         Accordion
     ---------------*/
@@ -176,24 +198,15 @@
 
     .first_section .notice
     {
-        font-size: 14px;
-
-        padding: 16px 16px 16px 80px;
-
-        border-radius: 10px;
-    }
-
-    .first_section .notice .icon
-    {
-        left: 16px;
-
-        width: 50px;
-        height: 45px;
+        font-size: 22px;
     }
 
     .first_section .notice .name
     {
-        font-size: 19px;
+        font-size: 38px;
+        line-height: 48px;
+
+        margin-bottom: 4px;
     }
 
 
