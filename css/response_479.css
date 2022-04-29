@@ -61,6 +61,34 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 32px;
+        margin-left: -12px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 17px;
+
+        width: calc(50% - 12px);
+        height: 52px;
+        margin-left: 12px;
+    }
+
+    .tabs button sup
+    {
+        font-size: 10px;
+
+        top: -3px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -88,6 +116,21 @@
     header .logo img
     {
         height: 20px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links
+    {
+        padding: 24px;
+    }
+
+    aside .links > * + *
+    {
+        margin-top: 12px;
     }
 
 
@@ -346,6 +389,158 @@
     .notes .btn
     {
         font-size: 17px;
+    }
+
+
+
+    /*------------------
+        Instructions
+    ------------------*/
+    .instructions .title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*-------------------
+        Pharm. props.
+    -------------------*/
+    .pharm_props .title
+    {
+        font-size: 22px;
+    }
+
+
+    .pharm_props .item + .item
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*--------------
+        Research
+    --------------*/
+    .research .item
+    {
+        font-size: 18px;
+
+        padding-left: 16px;
+    }
+
+
+    .research .item.accord .head
+    {
+        padding-left: 16px;
+    }
+
+
+    .research .item .title
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .research .item.accord .plus_minus
+    {
+        right: 20px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*---------------------
+        Why recommended
+    ---------------------*/
+    .why_recommended .block_title
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .why_recommended .head > *
+    {
+        order: 2;
+    }
+
+
+    .why_recommended .head .icon
+    {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+
+
+    .why_recommended .title
+    {
+        width: calc(100% - 56px);
+    }
+
+
+    .why_recommended .thumb
+    {
+        width: 100%;
+        height: 131px;
+        margin-bottom: 20px;
+
+        justify-content: center;
+        order: 1;
+    }
+
+
+
+    /*-------------------------
+        Why recommendations
+    -------------------------*/
+    .why_recommendations .percents
+    {
+        padding: 22px;
+    }
+
+
+    .why_recommendations .percents .val.big
+    {
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+
+    .why_recommendations .percents .exp
+    {
+        font-size: 22px;
+    }
+
+    .why_recommendations .percents .exp small
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*--------------------------
+        Proven effectiveness
+    --------------------------*/
+    .proven_effectiveness .directions_wrap
+    {
+        padding: 24px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .proven_effectiveness .direction
+    {
+        font-size: 19px;
+        line-height: 23px;
     }
 
 

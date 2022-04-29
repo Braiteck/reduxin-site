@@ -14,6 +14,12 @@ $(() => {
 	})
 
 
+	// МАТЕРИАЛЫ И ИССЛЕДОВАНИЯ
+	$('.research .item.accord .head').click(function () {
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
@@ -26,6 +32,8 @@ $(() => {
 
 	Fancybox.defaults.template = {
 		closeButton: '<img src="images/ic_close.svg" alt="">',
+		spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
+		main: null
 	}
 
 	// Всплывающие окна
@@ -57,6 +65,42 @@ $(() => {
 			$item.addClass('active').find('.data').slideDown(300)
 		}
 	})
+
+
+	// Табы
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			$parent.find('.tabs:first button').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab = $(`.tabs button[data-content="${locationHash}"]`),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
+
+		$parent.find('.tabs:first button').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
 
 
 	// Моб. меню

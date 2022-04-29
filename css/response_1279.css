@@ -17,6 +17,12 @@
     }
 
 
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
 
     /*--------------
         Fancybox
@@ -88,6 +94,26 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 20px;
+
+        width: 224px;
+        height: 68px;
+        margin-left: 20px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -117,6 +143,46 @@
     header .menu > * + *
     {
         margin-left: 16px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+    }
+
+    .content + aside
+    {
+        margin-top: 50px;
+    }
+
+
+    aside .links
+    {
+        padding: 28px;
+
+        border-radius: 20px;
+
+        column-gap: 24px;
+        column-count: 3;
+    }
+
+    aside .links > *
+    {
+        transform: translateZ(0);
+
+        --webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    aside .links > * + *
+    {
+        margin-top: 16px;
     }
 
 
@@ -572,6 +638,465 @@
     {
         font-size: 30px;
         line-height: 36px;
+    }
+
+
+
+    /*------------------
+        Instructions
+    ------------------*/
+    .instructions .title
+    {
+        font-size: 28px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .instructions .features > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*-------------------
+        Pharm. props.
+    -------------------*/
+    .pharm_props .title
+    {
+        font-size: 28px;
+
+        margin-bottom: 32px;
+    }
+
+
+
+    /*--------------
+        Research
+    --------------*/
+    .research
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .research .items > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .research .item
+    {
+        font-size: 24px;
+
+        padding: 20px 24px;
+
+        border-radius: 20px;
+    }
+
+
+    .research .item .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .research .item .title
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .research .item .data
+    {
+        padding: 0 100px 64px 88px;
+    }
+
+
+    .research .item.accord .head
+    {
+        padding: 20px 100px 20px 24px;
+    }
+
+
+    .research .item.accord .plus_minus
+    {
+        right: 30px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+
+
+    /*--------------
+        Why head
+    --------------*/
+    .why_head
+    {
+        padding-top: 64px;
+    }
+
+
+    .why_head .row
+    {
+        margin-top: 132px;
+        padding: 0;
+    }
+
+
+    .why_head .item
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .why_head .item .icon
+    {
+        padding: 20px;
+    }
+
+    .why_head .item .icon img + img
+    {
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+    }
+
+
+
+
+    /*---------------------
+        Why recommended
+    ---------------------*/
+    .why_recommended
+    {
+        padding: 60px 0;
+    }
+
+
+    .why_recommended .block_title
+    {
+        font-size: 27px;
+        line-height: 33px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .why_recommended .row
+    {
+        margin-left: -40px;
+    }
+
+    .why_recommended .row > *
+    {
+        width: calc(50% - 40px);
+        margin-left: 40px;
+    }
+
+
+    .why_recommended .head .icon
+    {
+        width: 36px;
+        height: 36px;
+        padding: 6px;
+    }
+
+
+    .why_recommended .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .why_recommended .thumb
+    {
+        width: 192px;
+        height: 80px;
+    }
+
+
+    .why_recommended .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        margin-top: 16px;
+    }
+
+
+    .why_recommended .link
+    {
+        margin-top: 16px;
+    }
+
+
+    .why_recommended .link a
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .why_recommended .link .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .why_recommended .link .icon img
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+    /*-------------------------
+        Why recommendations
+    -------------------------*/
+    .why_recommendations
+    {
+        padding: 60px 0;
+    }
+
+
+    .why_recommendations .data
+    {
+        width: 420px;
+    }
+
+
+    .why_recommendations .block_title
+    {
+        font-size: 27px;
+        line-height: 33px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .why_recommendations .desc
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .why_recommendations .not_recommended
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+    .why_recommendations .not_recommended .icon
+    {
+        width: 64px;
+        height: 64px;
+    }
+
+    .why_recommendations .not_recommended .icon + *
+    {
+        width: calc(100% - 80px);
+    }
+
+
+    .why_recommendations .percents
+    {
+        width: calc(100% - 472px);
+        padding: 26px 30px;
+
+        border-radius: 20px;
+    }
+
+
+    .why_recommendations .percents .val
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .why_recommendations .percents .red .val img
+    {
+        width: 360px;
+    }
+
+    .why_recommendations .percents .purple .val img
+    {
+        width: 24px;
+    }
+
+
+    .why_recommendations .percents .val.big
+    {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+
+    .why_recommendations .percents .exp
+    {
+        font-size: 23px;
+    }
+
+    .why_recommendations .percents .exp small
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-------------------
+        Reduxin block
+    -------------------*/
+    .reduxin_block
+    {
+        padding-top: 60px;
+    }
+
+
+    .reduxin_block .data
+    {
+        width: 284px;
+    }
+
+
+    .reduxin_block .title
+    {
+        font-size: 36px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .reduxin_block .title sup
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .reduxin_block .desc
+    {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .reduxin_block .desc span
+    {
+        font-size: 26px;
+        line-height: 36px;
+
+        height: 38px;
+        margin: 6px -10px;
+        padding: 0 10px;
+
+        border-radius: 8px;
+    }
+
+
+    .reduxin_block .image
+    {
+        width: calc(100% - 392px);
+    }
+
+
+
+    /*--------------------------
+        Proven effectiveness
+    --------------------------*/
+    .proven_effectiveness .block_title
+    {
+        font-size: 27px;
+        line-height: 33px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .proven_effectiveness .months .title
+    {
+        font-size: 36px;
+        line-height: 100%;
+    }
+
+
+    .proven_effectiveness .months .desc
+    {
+        font-size: 21px;
+        line-height: 25px;
+
+        margin-top: 12px;
+    }
+
+
+    .proven_effectiveness .months .items > *
+    {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+
+    .proven_effectiveness .directions_wrap
+    {
+        padding: 32px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .title
+    {
+        font-size: 27px;
+        line-height: 41px;
+
+        width: calc(50% - 40px);
+    }
+
+
+    .proven_effectiveness .directions:before
+    {
+        bottom: 11px;
+
+        width: 232px;
+        height: 115px;
+    }
+
+
+    .proven_effectiveness .direction
+    {
+        padding: 16px 20px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .items
+    {
+        margin-bottom: -24px;
+        margin-left: -40px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .items > *
+    {
+        width: calc(50% - 40px);
+        margin-bottom: 24px;
+        margin-left: 40px;
+    }
+
+
+
+    /*-------------------
+        Proven safety
+    -------------------*/
+    .proven_safety .block_title
+    {
+        font-size: 27px;
+        line-height: 33px;
     }
 
 

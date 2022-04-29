@@ -4,9 +4,21 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --sidebar_width: 380px;
+    }
+
+
     .cont
     {
         padding: 0 100px;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 52px);
     }
 
 
@@ -61,6 +73,36 @@
     .accordion_item .data
     {
         padding: 0 92px 48px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 60px;
+        margin-left: -20px;
+    }
+
+    .tabs button
+    {
+        font-size: 24px;
+        line-height: 21px;
+
+        width: 280px;
+        height: 86px;
+        margin-left: 20px;
+
+        border-radius: 15px;
+    }
+
+    .tabs button sup
+    {
+        font-size: 14px;
+
+        top: -2px;
     }
 
 
@@ -128,6 +170,30 @@
         height: 8px;
         margin-top: -8px;
         margin-left: 12px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links
+    {
+        padding: 36px 40px;
+
+        border-radius: 25px;
+    }
+
+    aside .links > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    aside .links a
+    {
+        font-size: 20px;
+        line-height: 28px;
     }
 
 
@@ -805,6 +871,639 @@
     .notes .btn img
     {
         height: 11px;
+    }
+
+
+
+    /*----------------
+        About page
+    ----------------*/
+    .about_page .tab_content > * + *
+    {
+        margin-top: 52px;
+    }
+
+
+
+    /*------------------
+        Instructions
+    ------------------*/
+    .instructions .title
+    {
+        font-size: 33px;
+        line-height: 28px;
+
+        margin-bottom: 52px;
+    }
+
+
+    .instructions .features
+    {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .instructions .features > * + *
+    {
+        margin-top: 32px;
+    }
+
+    .instructions .features .val + .val
+    {
+        margin-top: 26px;
+    }
+
+
+    .instructions .features sup
+    {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------------
+        Pharm. props.
+    -------------------*/
+    .pharm_props .title
+    {
+        font-size: 33px;
+        line-height: 28px;
+
+        margin-bottom: 52px;
+    }
+
+
+    .pharm_props .title2
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-bottom: 36px;
+    }
+
+
+    .pharm_props .item
+    {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .pharm_props .item .val > * + *
+    {
+        margin-top: 26px;
+    }
+
+
+
+    /*--------------
+        Research
+    --------------*/
+    .research
+    {
+        margin-bottom: 86px;
+    }
+
+
+    .research .items > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+    .research .item
+    {
+        font-size: 28px;
+
+        padding: 25px 31px;
+
+        border-radius: 25px;
+    }
+
+
+    .research .item .icon
+    {
+        width: 53px;
+        height: 53px;
+    }
+
+
+    .research .item .title
+    {
+        width: calc(100% - 75px);
+    }
+
+
+    .research .item .data
+    {
+        padding: 0 135px 77px 106px;
+    }
+
+
+    .research .item.accord .head
+    {
+        padding: 25px 135px 25px 31px;
+    }
+
+
+    .research .item.accord .plus_minus
+    {
+        right: 38px;
+
+        width: 66px;
+        height: 66px;
+    }
+
+    .research .item.accord .plus_minus .plus,
+    .research .item.accord .plus_minus .minus
+    {
+        width: 23px;
+    }
+
+
+
+    /*--------------
+        Why head
+    --------------*/
+    .why_head
+    {
+        padding-top: 92px;
+        padding-bottom: 24px;
+    }
+
+
+    .why_head .row
+    {
+        margin-top: 172px;
+        margin-bottom: -24px;
+        margin-left: -24px;
+        padding: 0 32px;
+    }
+
+    .why_head .row > *
+    {
+        width: calc(16.666% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .why_head .item
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .why_head .item .icon
+    {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .why_head .item .icon img + img
+    {
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+    }
+
+
+
+    /*---------------------
+        Why recommended
+    ---------------------*/
+    .why_recommended
+    {
+        padding: 80px 0 85px;
+    }
+
+
+    .why_recommended .block_title
+    {
+        font-size: 33px;
+        line-height: 42px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .why_recommended .row
+    {
+        margin-bottom: -44px;
+        margin-left: -64px;
+    }
+
+    .why_recommended .row > *
+    {
+        width: calc(50% - 64px);
+        margin-bottom: 44px;
+        margin-left: 64px;
+    }
+
+
+    .why_recommended .head .icon
+    {
+        width: 42px;
+        height: 42px;
+        margin-right: 16px;
+        padding: 8px;
+    }
+
+
+    .why_recommended .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .why_recommended .thumb
+    {
+        width: 230px;
+        height: 100px;
+    }
+
+
+    .why_recommended .desc
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-top: 24px;
+    }
+
+
+    .why_recommended .link
+    {
+        margin-top: 24px;
+    }
+
+
+    .why_recommended .link a
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .why_recommended .link .icon
+    {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+
+    .why_recommended .link .icon img
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    /*-------------------------
+        Why recommendations
+    -------------------------*/
+    .why_recommendations
+    {
+        padding: 76px 0;
+    }
+
+
+    .why_recommendations .data
+    {
+        width: 540px;
+    }
+
+
+    .why_recommendations .block_title
+    {
+        font-size: 33px;
+        line-height: 42px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .why_recommendations .desc
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .why_recommendations .not_recommended
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-top: 28px;
+    }
+
+    .why_recommendations .not_recommended .icon
+    {
+        width: 76px;
+        height: 76px;
+    }
+
+    .why_recommendations .not_recommended .icon + *
+    {
+        width: calc(100% - 92px);
+    }
+
+
+    .why_recommendations .percents
+    {
+        width: calc(100% - 590px);
+        padding: 36px 52px;
+
+        border-width: 3px;
+        border-radius: 25px;
+    }
+
+
+    .why_recommendations .percents .val
+    {
+        font-size: 40px;
+        line-height: 48px;
+
+        margin-bottom: 20px;
+    }
+
+    .why_recommendations .percents .val div
+    {
+        margin-top: 20px;
+    }
+
+    .why_recommendations .percents .red .val img
+    {
+        width: 428px;
+    }
+
+    .why_recommendations .percents .purple .val img
+    {
+        width: 28px;
+    }
+
+
+    .why_recommendations .percents .val.big
+    {
+        font-size: 56px;
+        line-height: 65px;
+    }
+
+
+    .why_recommendations .percents .exp
+    {
+        font-size: 28px;
+    }
+
+    .why_recommendations .percents .exp small
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        Reduxin block
+    -------------------*/
+    .reduxin_block
+    {
+        padding-top: 64px;
+        padding-bottom: 32px;
+    }
+
+
+    .reduxin_block .data
+    {
+        width: 328px;
+    }
+
+
+    .reduxin_block .title
+    {
+        font-size: 45px;
+
+        margin-bottom: 38px;
+    }
+
+
+    .reduxin_block .title sup
+    {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+
+    .reduxin_block .desc
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .reduxin_block .desc span
+    {
+        font-size: 30px;
+        line-height: 42px;
+
+        height: 44px;
+        margin: 8px -12px 6px;
+        padding: 0 12px;
+
+        border-radius: 10px;
+    }
+
+
+    .reduxin_block .image
+    {
+        width: calc(100% - 448px);
+    }
+
+
+
+    /*--------------------------
+        Proven effectiveness
+    --------------------------*/
+    .proven_effectiveness
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .proven_effectiveness .block_title
+    {
+        font-size: 33px;
+        line-height: 42px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .proven_effectiveness .img
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .proven_effectiveness .months .title
+    {
+        font-size: 45px;
+        line-height: 42px;
+    }
+
+
+    .proven_effectiveness .months .desc
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        margin-top: 16px;
+        padding-right: 96px;
+    }
+
+
+    .proven_effectiveness .months .items
+    {
+        margin-top: 24px;
+    }
+
+
+    .proven_effectiveness .months .items > *
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .proven_effectiveness .months .items > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .proven_effectiveness .months .icon
+    {
+        width: 58px;
+        padding: 0 6px;
+    }
+
+    .proven_effectiveness .months .icon + *
+    {
+        width: calc(100% - 72px);
+    }
+
+
+    .proven_effectiveness .directions_wrap
+    {
+        margin-top: 48px;
+        padding: 44px;
+
+        border-radius: 16px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .title
+    {
+        font-size: 33px;
+        line-height: 52px;
+
+        width: calc(50% - 64px);
+    }
+
+
+    .proven_effectiveness .directions:before
+    {
+        bottom: 14px;
+
+        width: 296px;
+        height: 148px;
+    }
+
+
+    .proven_effectiveness .direction
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        padding: 20px 24px;
+
+        border-radius: 10px;
+    }
+
+    .proven_effectiveness .direction + .direction
+    {
+        margin-top: 20px;
+    }
+
+
+    .proven_effectiveness .direction .icon
+    {
+        width: 54px;
+    }
+
+    .proven_effectiveness .direction .icon + *
+    {
+        width: calc(100% - 72px);
+    }
+
+
+    .proven_effectiveness .directions_wrap .items
+    {
+        margin-top: 45px;
+        margin-bottom: -32px;
+        margin-left: -52px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .items > *
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        width: calc(50% - 52px);
+        margin-bottom: 32px;
+        margin-left: 52px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .items .icon
+    {
+        width: 41px;
+    }
+
+    .proven_effectiveness .directions_wrap .items .icon + *
+    {
+        width: calc(100% - 56px);
+    }
+
+
+
+    /*-------------------
+        Proven safety
+    -------------------*/
+    .proven_safety .block_title
+    {
+        font-size: 33px;
+        line-height: 42px;
+
+        margin-bottom: -20px;
+    }
+
+
+    .proven_safety .desc
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        width: calc(100% - 360px);
+    }
+
+
+    .proven_safety .img
+    {
+        width: 187px;
     }
 
 

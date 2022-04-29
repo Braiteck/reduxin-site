@@ -53,6 +53,17 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs button
+    {
+        width: 220px;
+        height: 64px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -107,6 +118,17 @@
     header .mob_menu_btn
     {
         display: flex;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links
+    {
+        column-gap: 24px;
+        column-count: 2;
     }
 
 
@@ -493,6 +515,265 @@
     .add_question .btn img
     {
         height: 47px;
+    }
+
+
+
+    /*------------------
+        Instructions
+    ------------------*/
+    .instructions .title
+    {
+        font-size: 26px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .instructions .features
+    {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .instructions .features .val + .val
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------------
+        Pharm. props.
+    -------------------*/
+    .pharm_props .title
+    {
+        font-size: 26px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .instructions .item
+    {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .pharm_props .item + .item
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*--------------
+        Research
+    --------------*/
+    .research .item
+    {
+        font-size: 22px;
+    }
+
+
+    .research .item .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .research .item .title
+    {
+        width: calc(100% - 56px);
+    }
+
+
+    .research .item .data
+    {
+        padding: 12px 24px 48px 80px;
+    }
+
+
+    .research .item.accord .head
+    {
+        padding: 20px 92px 20px 24px;
+    }
+
+
+    .research .item.accord .plus_minus
+    {
+        right: 24px;
+    }
+
+
+
+    /*--------------
+        Why head
+    --------------*/
+    .why_head
+    {
+        padding-top: 56px;
+    }
+
+    .why_head:after
+    {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+
+        opacity: .1;
+        background: #000;
+    }
+
+
+    .why_head .row
+    {
+        margin-top: 120px;
+    }
+
+    .why_head .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*---------------------
+        Why recommended
+    ---------------------*/
+    .why_recommended .row
+    {
+        margin-left: 0;
+    }
+
+    .why_recommended .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------------
+        Why recommendations
+    -------------------------*/
+    .why_recommendations .data
+    {
+        width: 100%;
+    }
+
+
+    .why_recommendations .percents
+    {
+        width: 100%;
+        margin-top: 32px;
+
+        justify-content: center;
+    }
+
+    .why_recommendations .percents .item + .item
+    {
+        margin-left: 56px;
+    }
+
+
+
+    /*-------------------
+        Reduxin block
+    -------------------*/
+    .reduxin_block
+    {
+        padding-bottom: 40px;
+    }
+
+    .reduxin_block .image
+    {
+        width: calc(100% - 300px);
+    }
+
+
+
+    /*--------------------------
+        Proven effectiveness
+    --------------------------*/
+    .proven_effectiveness .months .desc
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .proven_effectiveness .months .items > *
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .proven_effectiveness .directions_wrap .title
+    {
+        font-size: 27px;
+        line-height: 33px;
+
+        width: 100%;
+    }
+
+    .proven_effectiveness .directions_wrap .title br
+    {
+        display: none;
+    }
+
+
+    .proven_effectiveness .directions
+    {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+    .proven_effectiveness .directions:before
+    {
+        display: none;
+    }
+
+
+    .proven_effectiveness .directions_wrap .items
+    {
+        margin-left: -32px;
+    }
+
+    .proven_effectiveness .directions_wrap .items > *
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        width: calc(50% - 32px);
+        margin-left: 32px;
+    }
+
+
+
+    /*-------------------
+        Proven safety
+    -------------------*/
+    .proven_safety .block_title
+    {
+        margin-bottom: -16px;
+    }
+
+
+    .proven_safety .desc
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        width: calc(100% - 280px);
     }
 
 
