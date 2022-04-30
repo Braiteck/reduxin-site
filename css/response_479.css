@@ -545,6 +545,41 @@
 
 
 
+    /*--------------
+        Programs
+    --------------*/
+    .programs .program
+    {
+        padding: 32px 20px;
+    }
+
+
+    .programs .program .logo img
+    {
+        max-width: 60%;
+    }
+
+
+    .programs .program .program_name
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .programs .program .download a
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .programs .program .download span
+    {
+        width: calc(100% - 52px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

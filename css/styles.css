@@ -547,6 +547,21 @@ button
     transition-delay: .9s !important;
 }
 
+.animate.delay4
+{
+    transition-delay: 1.2s !important;
+}
+
+.animate.delay5
+{
+    transition-delay: 1.5s !important;
+}
+
+.animate.delay6
+{
+    transition-delay: 1.8s !important;
+}
+
 
 .fadeInUp
 {
@@ -920,7 +935,8 @@ aside .links > * + *
 }
 
 
-aside .links a
+aside .links a,
+aside .links button
 {
     color: #406194;
     font-size: 26px;
@@ -929,12 +945,15 @@ aside .links a
     display: inline-block;
 
     transition: color .2s linear;
+    text-align: left;
     vertical-align: top;
     text-decoration: none;
 }
 
 aside .links a:hover,
-aside .links a.active
+aside .links a.active,
+aside .links button:hover,
+aside .links button.active
 {
     color: #b34992;
 }
@@ -1275,6 +1294,43 @@ aside .links a.active
     display: inline-block;
 
     vertical-align: top;
+}
+
+
+.text_block ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 25px;
+
+    list-style-type: none;
+}
+
+.text_block ul li + li
+{
+    margin-top: 16px;
+}
+
+.text_block ul li:before
+{
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #406194;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .11);
 }
 
 
@@ -2978,6 +3034,8 @@ aside .links a.active
     position: relative;
     z-index: 3;
 
+    overflow: hidden;
+
     padding-top: 120px;
     padding-bottom: 32px;
 }
@@ -3863,6 +3921,149 @@ aside .links a.active
     max-width: 75%;
     margin-right: auto;
     margin-left: auto;
+}
+
+
+
+/*--------------
+    Programs
+--------------*/
+.programs
+{
+    margin-bottom: 108px;
+}
+
+
+.programs .program
+{
+    display: flex;
+
+    padding: 72px 56px;
+
+    border-radius: 33px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .11);
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.programs .program + .program
+{
+    margin-top: 24px;
+}
+
+
+.programs .program .logo
+{
+    width: 212px;
+    max-width: 100%;
+}
+
+.programs .program .logo img
+{
+    display: block;
+
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.programs .program .data
+{
+    width: calc(100% - 268px);
+    margin-left: auto;
+}
+
+
+.programs .program .program_name
+{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 100%;
+
+    margin-bottom: 44px;
+
+    text-transform: uppercase;
+}
+
+
+.programs .program .results
+{
+    margin-top: 40px;
+}
+
+.programs .program .results .title
+{
+    color: #b34992;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+
+    margin-bottom: 36px;
+
+    text-transform: uppercase;
+}
+
+
+.programs .program .download
+{
+    margin-top: 40px;
+}
+
+
+.programs .program .download a
+{
+    color: var(--text_color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+
+    display: flex;
+
+    padding: 33px 47px;
+
+    text-decoration: none;
+
+    border: 3px solid #faf4fb;
+    border-radius: 33px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.programs .program .download .icon
+{
+    display: flex;
+
+    width: 55px;
+    height: 71px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.programs .program .download .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.programs .program .download span
+{
+    display: block;
+
+    width: calc(100% - 94px);
 }
 
 

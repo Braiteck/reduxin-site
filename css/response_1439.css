@@ -1450,6 +1450,89 @@
 
 
 
+    /*--------------
+        Programs
+    --------------*/
+    .programs
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .programs .program
+    {
+        padding: 48px 38px;
+
+        border-radius: 22px;
+    }
+
+
+    .programs .program .logo
+    {
+        width: 144px;
+    }
+
+
+
+    .programs .program .data
+    {
+        width: calc(100% - 176px);
+    }
+
+
+    .programs .program .program_name
+    {
+        font-size: 25px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .programs .program .results
+    {
+        margin-top: 32px;
+    }
+
+    .programs .program .results .title
+    {
+        font-size: 21px;
+        line-height: 25px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .programs .program .download
+    {
+        margin-top: 32px;
+    }
+
+
+    .programs .program .download a
+    {
+        font-size: 21px;
+        line-height: 25px;
+
+        padding: 22px 32px;
+
+        border-radius: 22px;
+    }
+
+
+    .programs .program .download .icon
+    {
+        width: 35px;
+        height: 47px;
+    }
+
+
+    .programs .program .download span
+    {
+        width: calc(100% - 60px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

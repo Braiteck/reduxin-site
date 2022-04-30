@@ -778,6 +778,82 @@
 
 
 
+    /*--------------
+        Programs
+    --------------*/
+    .programs
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .programs .program
+    {
+        padding: 40px 28px;
+
+        border-radius: 20px;
+    }
+
+
+    .programs .program .logo
+    {
+        width: 124px;
+    }
+
+
+
+    .programs .program .data
+    {
+        width: calc(100% - 156px);
+    }
+
+
+    .programs .program .program_name
+    {
+        font-size: 24px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .programs .program .results
+    {
+        margin-top: 28px;
+    }
+
+    .programs .program .results .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .programs .program .download
+    {
+        margin-top: 28px;
+    }
+
+
+    .programs .program .download a
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        padding: 20px 28px;
+
+        border-radius: 20px;
+    }
+
+
+    .programs .program .download span
+    {
+        width: calc(100% - 55px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

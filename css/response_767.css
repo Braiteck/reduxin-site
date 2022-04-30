@@ -777,6 +777,62 @@
 
 
 
+    /*--------------
+        Programs
+    --------------*/
+    .programs .program
+    {
+        padding: 36px 24px;
+    }
+
+
+    .programs .program .logo
+    {
+        width: 100%;
+        margin: 0 auto 24px;
+    }
+
+
+
+    .programs .program .data
+    {
+        width: 100%;
+    }
+
+
+    .programs .program .program_name
+    {
+        font-size: 22px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .programs .program .results .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .programs .program .download a
+    {
+        font-size: 19px;
+        line-height: 23px;
+
+        padding: 16px 20px;
+    }
+
+
+    .programs .program .download span
+    {
+        width: calc(100% - 55px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

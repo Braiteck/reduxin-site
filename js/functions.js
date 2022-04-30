@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				entry.target.classList.add('loaded')
 			}
 
-			if (entry.intersectionRatio >= 0.2 && entry.target.classList.contains('animate')) {
+			if (entry.intersectionRatio >= 0.1 && entry.target.classList.contains('animate')) {
 				entry.target.classList.add('animated')
 			}
 		}

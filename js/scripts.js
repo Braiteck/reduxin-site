@@ -103,6 +103,10 @@ $(() => {
 	}
 
 
+	// залипание блока при скролле
+	$('.sticky').stick_in_parent();
+
+
 	// Моб. меню
 	$('header .mob_menu_btn').click((e) => {
 		e.preventDefault()
@@ -115,6 +119,31 @@ $(() => {
 
 	// Маска ввода
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
+
+
+	// Плавная прокрутка к якорю
+	// Работает и при прокрутке к табу
+	$('.scroll_btn').click(function (e) {
+		e.preventDefault()
+
+		let href = $(this).data('anchor'),
+			addOffset = $('header').outerHeight() + 24
+
+		if ($(this).data('offset')) addOffset = $(this).data('offset')
+
+		if ($('.tabs button[data-content="' + href + '"]').length) {
+			const $activeTab = $('.tabs button[data-content="' + href + '"]'),
+				$parent = $activeTab.closest('.tabs_container'),
+				level = $activeTab.data('level')
+
+			$parent.find('.tabs:first button, .tab_content.' + level).removeClass('active')
+
+			$activeTab.addClass('active')
+			$(href).addClass('active')
+		}
+
+		$('html, body').stop().animate({ scrollTop: $(href).offset().top - addOffset }, 1000)
+	})
 
 
 	if (is_touch_device()) {
