@@ -4068,6 +4068,217 @@ aside .links button.active
 
 
 
+/*--------------
+    Covid_19
+--------------*/
+.covid_19
+{
+    margin-bottom: 112px;
+}
+
+
+.covid_19 .row
+{
+    justify-content: space-between;
+}
+
+
+.covid_19 .text_block
+{
+    width: calc(100% - 532px);
+}
+
+
+.covid_19 .image
+{
+    width: 532px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.covid_19 .image img
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    mix-blend-mode: darken;
+}
+
+
+.covid_19 .data
+{
+    margin-top: 48px;
+    padding: 56px 68px 68px;
+
+    border-radius: 33px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .11);
+}
+
+
+.covid_19 .data .block_title
+{
+    color: #406194;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 56px;
+
+    letter-spacing: -.025em;
+}
+
+.covid_19 .data .block_title span
+{
+    color: #b34992;
+}
+
+
+.covid_19 .data .block_desc
+{
+    font-size: 26px;
+    line-height: 37px;
+
+    margin-top: 44px;
+}
+
+
+.covid_19 .data .items
+{
+    display: flex;
+
+    margin-top: 64px;
+
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.covid_19 .data .item
+{
+    font-size: 26px;
+    line-height: 37px;
+
+    width: calc(50% - 38px);
+
+    text-align: center;
+}
+
+
+.covid_19 .data .item .thumb
+{
+    display: flex;
+
+    height: 357px;
+    margin-bottom: 32px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.covid_19 .data .item .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.covid_19 .data .item .name
+{
+    color: #b34992;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 37px;
+
+    display: inline-block;
+
+    padding: 7px 30px;
+
+    vertical-align: top;
+
+    border: 3px solid #f9f3fb;
+    border-radius: 10px;
+}
+
+
+.covid_19 .data .item .desc
+{
+    margin-top: 32px;
+}
+
+.covid_19 .data .item .desc span
+{
+    color: #406194;
+}
+
+
+.covid_19 .download,
+.covid_19 .download > * + *
+{
+    margin-top: 32px;
+}
+
+
+.covid_19 .download a
+{
+    color: var(--text_color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+
+    display: flex;
+
+    padding: 33px 47px;
+
+    text-decoration: none;
+
+    border-radius: 33px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .11);
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.covid_19 .download .icon
+{
+    display: flex;
+
+    width: 55px;
+    height: 71px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.covid_19 .download .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.covid_19 .download span
+{
+    display: block;
+
+    width: calc(100% - 94px);
+}
+
+
+
 /*------------
     Footer
 ------------*/

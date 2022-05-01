@@ -833,6 +833,101 @@
 
 
 
+    /*--------------
+        Covid_19
+    --------------*/
+    .covid_19
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .covid_19 .text_block
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+
+    .covid_19 .image
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .covid_19 .data
+    {
+        padding: 24px;
+    }
+
+
+    .covid_19 .data .block_title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .covid_19 .data .block_title br
+    {
+        display: none;
+    }
+
+
+    .covid_19 .data .block_desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .covid_19 .data .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 100%;
+    }
+
+    .covid_19 .data .item + .item
+    {
+        margin-top: 40px;
+    }
+
+
+    .covid_19 .data .item .thumb
+    {
+        height: 172px;
+    }
+
+
+    .covid_19 .data .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    .covid_19 .download a
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        padding: 16px 20px;
+    }
+
+
+    .covid_19 .download span
+    {
+        width: calc(100% - 55px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

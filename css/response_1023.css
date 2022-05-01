@@ -854,6 +854,118 @@
 
 
 
+    /*--------------
+        Covid_19
+    --------------*/
+    .covid_19
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .covid_19 .text_block
+    {
+        width: calc(100% - 240px);
+    }
+
+
+    .covid_19 .image
+    {
+        width: 200px;
+
+        align-self: center;
+    }
+
+    .covid_19 .image img
+    {
+        width: 200px;
+    }
+
+
+    .covid_19 .data
+    {
+        padding: 32px;
+
+        border-radius: 20px;
+    }
+
+
+    .covid_19 .data .block_title
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+    .covid_19 .data .block_desc
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .covid_19 .data .items
+    {
+        margin-top: 40px;
+    }
+
+
+    .covid_19 .data .item
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: calc(50% - 12px);
+    }
+
+
+    .covid_19 .data .item .thumb
+    {
+        height: 200px;
+    }
+
+
+    .covid_19 .data .item .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .covid_19 .data .item .desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    .covid_19 .download,
+    .covid_19 .download > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .covid_19 .download a
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        padding: 20px 28px;
+
+        border-radius: 20px;
+    }
+
+
+    .covid_19 .download span
+    {
+        width: calc(100% - 55px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -580,6 +580,23 @@
 
 
 
+    /*--------------
+        Covid_19
+    --------------*/
+    .covid_19 .data .block_title
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .programs .program .download span
+    {
+        width: calc(100% - 52px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/
