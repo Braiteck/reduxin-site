@@ -452,6 +452,49 @@
 
 
 
+    /*--------------
+        Why head
+    --------------*/
+    .why_head .item .tooltip
+    {
+        width: calc(200% + 68px);
+    }
+
+
+    .why_head .item .tooltip,
+    .why_head .item:first-child .tooltip,
+    .why_head .item:last-child .tooltip
+    {
+        right: auto;
+        left: -24px;
+
+        margin: 0;
+
+        transform: none;
+    }
+
+    .why_head .item .tooltip:before,
+    .why_head .item:first-child .tooltip:before,
+    .why_head .item:last-child .tooltip:before
+    {
+        right: calc(50% - 12px);
+    }
+
+
+    .why_head .item:nth-child(2n) .tooltip
+    {
+        right: -24px;
+        left: auto;
+    }
+
+    .why_head .item:nth-child(2n) .tooltip:before
+    {
+        right: 0;
+        left: calc(50% - 12px);
+    }
+
+
+
     /*---------------------
         Why recommended
     ---------------------*/
@@ -593,6 +636,31 @@
     .programs .program .download span
     {
         width: calc(100% - 52px);
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .where_buy .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+    .where_buy .item
+    {
+        height: 120px;
+        padding: 12px;
     }
 
 

@@ -161,6 +161,28 @@
     }
 
 
+
+    aside .download
+    {
+        margin-bottom: 20px;
+    }
+
+    aside .download a
+    {
+        font-size: 17px;
+
+        padding: 14px 32px;
+
+        border-radius: 20px;
+    }
+
+    aside .download .icon
+    {
+        margin-right: 16px;
+    }
+
+
+
     aside .links
     {
         padding: 28px;
@@ -767,6 +789,47 @@
     }
 
 
+    .why_head .item .tooltip
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        bottom: calc(100% + 20px);
+
+        width: 440px;
+        padding: 20px 28px;
+
+        border-radius: 20px;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .2);
+    }
+
+    .why_head .item .tooltip:before
+    {
+        bottom: -6px;
+
+        width: 12px;
+        height: 12px;
+
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .2);
+    }
+
+    .why_head .item .tooltip:after
+    {
+        height: 20px;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+    .why_head .item:first-child .tooltip:before
+    {
+        left: 66px;
+    }
+
+    .why_head .item:last-child .tooltip:before
+    {
+        right: 66px;
+    }
+
 
 
     /*---------------------
@@ -830,29 +893,34 @@
     }
 
 
-    .why_recommended .link
+    .why_recommended .spoler_btn
     {
         margin-top: 16px;
     }
 
 
-    .why_recommended .link a
+    .why_recommended .spoler_btn .btn
     {
         font-size: 20px;
         line-height: 24px;
     }
 
 
-    .why_recommended .link .icon
+    .why_recommended .spoler_btn .icon
     {
         width: 32px;
         height: 32px;
     }
 
-    .why_recommended .link .icon img
+    .why_recommended .spoler_btn .icon img
     {
         width: 16px;
         height: 16px;
+    }
+
+    .why_recommended .spoler_btn .icon img + img
+    {
+        width: 17px;
     }
 
 
@@ -1097,5 +1165,23 @@
     {
         font-size: 27px;
         line-height: 33px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .where_buy .item
+    {
+        height: 152px;
+
+        border-radius: 20px;
     }
 }

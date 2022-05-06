@@ -162,6 +162,28 @@
     /*-------------
         Sidebar
     -------------*/
+    aside .download
+    {
+        margin-bottom: 22px;
+    }
+
+    aside .download a
+    {
+        font-size: 17px;
+
+        padding: 14px 38px;
+
+        border-radius: 22px;
+    }
+
+    aside .download .icon
+    {
+        width: 36px;
+        margin-right: 17px;
+    }
+
+
+
     aside .links
     {
         padding: 32px 36px;
@@ -175,7 +197,8 @@
     }
 
 
-    aside .links a
+    aside .links a,
+    aside .links button
     {
         font-size: 18px;
         line-height: 25px;
@@ -1022,6 +1045,48 @@
     }
 
 
+    .why_head .item .tooltip
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        bottom: calc(100% + 20px);
+
+        width: 495px;
+        padding: 26px 32px;
+
+        border-radius: 22px;
+        box-shadow: 0 2px 22px 0 rgba(0, 0, 0, .2);
+    }
+
+    .why_head .item .tooltip:before
+    {
+        bottom: -7px;
+
+        width: 14px;
+        height: 14px;
+
+        box-shadow: 0 2px 22px 0 rgba(0, 0, 0, .2);
+    }
+
+    .why_head .item .tooltip:after
+    {
+        height: 26px;
+
+        border-radius: 0 0 22px 22px;
+    }
+
+    .why_head .item:first-child .tooltip:before
+    {
+        left: 76px;
+    }
+
+    .why_head .item:last-child .tooltip:before
+    {
+        right: 76px;
+    }
+
+
     .why_head .item:hover .icon
     {
         box-shadow: 0 0 0 6px #fff;
@@ -1091,29 +1156,34 @@
     }
 
 
-    .why_recommended .link
+    .why_recommended .spoler_btn
     {
         margin-top: 20px;
     }
 
 
-    .why_recommended .link a
+    .why_recommended .spoler_btn .btn
     {
         font-size: 21px;
         line-height: 25px;
     }
 
 
-    .why_recommended .link .icon
+    .why_recommended .spoler_btn .icon
     {
         width: 35px;
         height: 35px;
     }
 
-    .why_recommended .link .icon img
+    .why_recommended .spoler_btn .icon img
     {
         width: 17px;
         height: 17px;
+    }
+
+    .why_recommended .spoler_btn .icon img + img
+    {
+        width: 18px;
     }
 
 
@@ -1648,6 +1718,38 @@
     .covid_19 .download span
     {
         width: calc(100% - 60px);
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .where_buy .row
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    .where_buy .row > *
+    {
+        width: calc(25% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+
+    .where_buy .item
+    {
+        height: 184px;
+
+        border-radius: 22px;
     }
 
 

@@ -920,6 +920,43 @@ aside
 
 
 
+aside .download
+{
+    margin-bottom: 32px;
+}
+
+aside .download a
+{
+    color: #406194;
+    font-size: 26px;
+    font-weight: 700;
+
+    display: flex;
+
+    padding: 21px 57px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-radius: 33px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .11);
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+aside .download .icon
+{
+    display: block;
+
+    margin-right: 28px;
+}
+
+
+
 aside .links
 {
     padding: 44px 56px;
@@ -3080,6 +3117,8 @@ aside .links button.active
     font-weight: 700;
     line-height: 37px;
 
+    position: relative;
+
     text-align: center;
 }
 
@@ -3128,6 +3167,114 @@ aside .links button.active
 }
 
 
+.why_head .item .tooltip
+{
+    color: var(--text_color);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 37px;
+
+    position: absolute;
+    z-index: 9;
+    bottom: calc(100% + 33px);
+    left: 50%;
+
+    visibility: hidden;
+
+    width: 743px;
+    padding: 45px 50px;
+
+    transition: .2s linear;
+    transform: translateX(-50%);
+    text-align: left;
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 33px;
+    background: #fff;
+    box-shadow: 0 2px 33px 0 rgba(0, 0, 0, .2);
+}
+
+.why_head .item .tooltip:before
+{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
+
+    background: #fff;
+    box-shadow: 0 2px 33px 0 rgba(0, 0, 0, .2);
+}
+
+.why_head .item .tooltip:after
+{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 45px;
+
+    content: '';
+
+    border-radius: 0 0 33px 33px;
+    background: #fff;
+}
+
+.why_head .item .tooltip b
+{
+    color: #b34992;
+}
+
+
+
+.why_head .item:first-child .tooltip
+{
+    left: 0;
+
+    transform: none;
+}
+
+.why_head .item:first-child .tooltip:before
+{
+    right: auto;
+    left: 80px;
+}
+
+
+.why_head .item:last-child .tooltip
+{
+    right: 0;
+    left: auto;
+
+    transform: none;
+}
+
+.why_head .item:last-child .tooltip:before
+{
+    right: 80px;
+    left: auto;
+}
+
+
+.why_head .item:hover
+{
+    z-index: 10;
+}
+
 .why_head .item:hover .icon
 {
     background: #b34992;
@@ -3142,6 +3289,15 @@ aside .links button.active
 .why_head .item:hover .icon img + img
 {
     display: block;
+}
+
+.why_head .item:hover .tooltip
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 
@@ -3257,10 +3413,16 @@ aside .links button.active
     line-height: 37px;
 
     margin-top: 28px;
+    padding-right: 16px;
+}
+
+.why_recommended .desc.hide
+{
+    display: none;
 }
 
 
-.why_recommended .link
+.why_recommended .spoler_btn
 {
     display: flex;
 
@@ -3268,7 +3430,7 @@ aside .links button.active
 }
 
 
-.why_recommended .link a
+.why_recommended .spoler_btn .btn
 {
     color: #b34992;
     font-size: 32px;
@@ -3277,7 +3439,8 @@ aside .links button.active
 
     display: flex;
 
-    text-decoration: none;
+    transition: color .2s linear;
+    text-align: left;
 
     justify-content: flex-start;
     align-items: center;
@@ -3286,7 +3449,7 @@ aside .links button.active
 }
 
 
-.why_recommended .link .icon
+.why_recommended .spoler_btn .icon
 {
     display: flex;
 
@@ -3304,12 +3467,40 @@ aside .links button.active
     flex-wrap: wrap;
 }
 
-.why_recommended .link .icon img
+.why_recommended .spoler_btn .icon img
 {
     display: block;
 
     width: 26px;
     height: 26px;
+}
+
+.why_recommended .spoler_btn .icon img + img
+{
+    display: none;
+
+    width: 31px;
+    height: 7px;
+}
+
+
+.why_recommended .spoler_btn span + span,
+.why_recommended .spoler_btn .btn.active span,
+.why_recommended .spoler_btn .btn.active .icon img
+{
+    display: none;
+}
+
+.why_recommended .spoler_btn .btn.active span + span,
+.why_recommended .spoler_btn .btn.active .icon img + img
+{
+    display: block;
+}
+
+
+.why_recommended .spoler_btn .btn.active
+{
+    color: #406194;
 }
 
 
@@ -4275,6 +4466,59 @@ aside .links button.active
     display: block;
 
     width: calc(100% - 94px);
+}
+
+
+
+/*---------------
+    Where buy
+---------------*/
+.where_buy
+{
+    margin-bottom: 120px;
+}
+
+
+.where_buy .row
+{
+    margin-bottom: -25px;
+    margin-left: -25px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.where_buy .row > *
+{
+    width: calc(25% - 25px);
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+
+.where_buy .item
+{
+    display: flex;
+
+    height: 279px;
+    padding: 24px;
+
+    border-radius: 33px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .11);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.where_buy .item img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
 

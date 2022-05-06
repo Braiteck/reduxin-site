@@ -569,6 +569,30 @@
     }
 
 
+    .why_head .item:nth-child(1) .tooltip,
+    .why_head .item:nth-child(2) .tooltip
+    {
+        top: calc(100% + 20px);
+        bottom: auto;
+    }
+
+    .why_head .item:nth-child(1) .tooltip:before,
+    .why_head .item:nth-child(2) .tooltip:before
+    {
+        top: -7px;
+        bottom: auto;
+    }
+
+    .why_head .item:nth-child(1) .tooltip:after,
+    .why_head .item:nth-child(2) .tooltip:after
+    {
+        top: 0;
+        bottom: auto;
+
+        border-radius: 20px 20px 0 0;
+    }
+
+
 
     /*---------------------
         Why recommended
@@ -924,6 +948,31 @@
     .covid_19 .download span
     {
         width: calc(100% - 55px);
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .row
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    .where_buy .row > *
+    {
+        width: calc(50% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+
+    .where_buy .item
+    {
+        height: 132px;
+        padding: 16px;
     }
 
 

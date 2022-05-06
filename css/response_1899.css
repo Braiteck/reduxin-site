@@ -177,6 +177,28 @@
     /*-------------
         Sidebar
     -------------*/
+    aside .download
+    {
+        margin-bottom: 25px;
+    }
+
+    aside .download a
+    {
+        font-size: 20px;
+
+        padding: 16px 43px;
+
+        border-radius: 25px;
+    }
+
+    aside .download .icon
+    {
+        width: 41px;
+        margin-right: 19px;
+    }
+
+
+
     aside .links
     {
         padding: 36px 40px;
@@ -190,7 +212,8 @@
     }
 
 
-    aside .links a
+    aside .links a,
+    aside .links button
     {
         font-size: 20px;
         line-height: 28px;
@@ -1089,6 +1112,38 @@
     }
 
 
+    .why_head .item .tooltip
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        bottom: calc(100% + 25px);
+
+        width: 556px;
+        padding: 32px 38px;
+
+        border-radius: 25px;
+        box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .2);
+    }
+
+    .why_head .item .tooltip:before
+    {
+        bottom: -8px;
+
+        width: 16px;
+        height: 16px;
+
+        box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .2);
+    }
+
+    .why_head .item .tooltip:after
+    {
+        height: 32px;
+
+        border-radius: 0 0 25px 25px;
+    }
+
+
 
     /*---------------------
         Why recommended
@@ -1154,30 +1209,36 @@
     }
 
 
-    .why_recommended .link
+    .why_recommended .spoler_btn
     {
         margin-top: 24px;
     }
 
 
-    .why_recommended .link a
+    .why_recommended .spoler_btn .btn
     {
         font-size: 24px;
         line-height: 28px;
     }
 
 
-    .why_recommended .link .icon
+    .why_recommended .spoler_btn .icon
     {
         width: 40px;
         height: 40px;
         margin-right: 12px;
     }
 
-    .why_recommended .link .icon img
+    .why_recommended .spoler_btn .icon img
     {
         width: 20px;
         height: 20px;
+    }
+
+    .why_recommended .spoler_btn .icon img + img
+    {
+        width: 22px;
+        height: auto;
     }
 
 
@@ -1728,6 +1789,39 @@
     .covid_19 .download span
     {
         width: calc(100% - 71px);
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy
+    {
+        margin-bottom: 90px;
+    }
+
+
+    .where_buy .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .where_buy .row > *
+    {
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .where_buy .item
+    {
+        height: 200px;
+        padding: 20px;
+
+        border-radius: 25px;
     }
 
 

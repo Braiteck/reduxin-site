@@ -49,6 +49,14 @@ $(() => {
 	})
 
 
+	//
+	$('.why_recommended .spoler_btn .btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').closest('.spoler_btn').next().slideToggle(300)
+	})
+
+
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
 		e.preventDefault()
