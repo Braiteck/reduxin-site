@@ -221,6 +221,42 @@
 
 
 
+    aside .article_image
+    {
+        border-radius: 25px;
+    }
+
+
+
+    aside .articles
+    {
+        padding: 36px 40px;
+
+        border-radius: 25px;
+    }
+
+
+    aside .articles .title
+    {
+        font-size: 28px;
+
+        margin-bottom: 24px;
+    }
+
+
+    aside .articles .items
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    aside .articles .items > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/
@@ -246,6 +282,19 @@
     {
         font-size: 20px;
         line-height: 28px;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .text_block .big
+    {
+        font-size: 24px;
+        line-height: 32px;
     }
 
 
@@ -1826,12 +1875,138 @@
 
 
 
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 52px 0 60px;
+    }
+
+
+    .articles .page_title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .articles .row
+    {
+        margin-bottom: -28px;
+        margin-left: -28px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 28px);
+        margin-bottom: 28px;
+        margin-left: 28px;
+    }
+
+
+    .articles .article
+    {
+        border-radius: 25px;
+    }
+
+
+    .articles .article .info
+    {
+        padding: 32px 36px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-top: 20px;
+    }
+
+
+    .articles .article .link
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding: 52px 0 60px;
+    }
+
+
+    .article_info .page_title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .article_info .articles_link
+    {
+        margin-top: 48px;
+    }
+
+
+    .article_info .articles_link a
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .article_info .articles_link .icon
+    {
+        width: 42px;
+        height: 42px;
+        margin-right: 15px;
+    }
+
+    .article_info .articles_link .icon img
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+    .article_info .articles_link .icon + *
+    {
+        width: calc(100% - 57px);
+    }
+
+
+    .article_info aside > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
     footer
     {
         padding-bottom: 44px;
+    }
+
+    footer.bg
+    {
+        padding-top: 44px;
     }
 
 

@@ -90,6 +90,25 @@
 
 
 
+    aside .articles .title
+    {
+        font-size: 24px;
+    }
+
+
+    aside .articles .items
+    {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    aside .articles .items > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/
@@ -104,6 +123,11 @@
     {
         font-size: 30px;
         line-height: 38px;
+    }
+
+    .page_title br
+    {
+        display: none;
     }
 
 
@@ -973,6 +997,57 @@
     {
         height: 132px;
         padding: 16px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 32px 0 60px;
+    }
+
+
+    .articles .row
+    {
+        margin-left: 0;
+    }
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding: 32px 0 60px;
+    }
+
+
+    .article_info .articles_link
+    {
+        margin-top: 28px;
+    }
+
+
+    .article_info .articles_link a
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+    .article_info aside > * + *
+    {
+        margin-top: 24px;
     }
 
 

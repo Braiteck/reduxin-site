@@ -209,6 +209,22 @@
 
 
 
+    aside .article_image
+    {
+        border-radius: 20px;
+    }
+
+
+
+    aside .articles
+    {
+        padding: 28px;
+
+        border-radius: 20px;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/
@@ -234,6 +250,13 @@
     {
         font-size: 17px;
         line-height: 23px;
+    }
+
+
+    .text_block .big
+    {
+        font-size: 19px;
+        line-height: 25px;
     }
 
 
@@ -1183,5 +1206,70 @@
         height: 152px;
 
         border-radius: 20px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 40px 0 60px;
+    }
+
+
+    .articles .page_title
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .articles .article
+    {
+        border-radius: 20px;
+    }
+
+
+    .articles .article .info
+    {
+        padding: 20px 24px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .articles .article .link
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding: 40px 0 60px;
+    }
+
+
+    .article_info .page_title
+    {
+        margin-bottom: 28px;
     }
 }

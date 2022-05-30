@@ -135,6 +135,26 @@
 
 
 
+    aside .articles
+    {
+        padding: 24px;
+    }
+
+
+    aside .articles .title
+    {
+        font-size: 23px;
+    }
+
+
+    aside .articles .items
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/
@@ -661,6 +681,31 @@
     {
         height: 120px;
         padding: 12px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .info
+    {
+        padding: 20px 24px;
+    }
+
+
+    .articles .article .name,
+    .articles .article .link
+    {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
     }
 
 

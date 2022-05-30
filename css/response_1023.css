@@ -1015,6 +1015,75 @@
 
 
 
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 36px 0 60px;
+    }
+
+
+    .articles .page_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+    .articles .row > *.animate.delay,
+    .articles .row > *.animate.delay2
+    {
+        transition-delay: 0s !important;
+    }
+
+
+    .articles .article .info
+    {
+        padding: 24px 28px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding: 36px 0 60px;
+    }
+
+
+    .article_info .page_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .article_info .articles_link
+    {
+        margin-top: 32px;
+    }
+
+
+    .article_info .articles_link a
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .article_info aside > * + *
+    {
+        margin-top: 28px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
