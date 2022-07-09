@@ -4621,6 +4621,35 @@ aside .articles .items a
 }
 
 
+.articles .swiper
+{
+    overflow: visible !important;
+
+    margin-bottom: 40px;
+}
+
+.articles .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.articles .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
 .articles .row
 {
     margin-bottom: -36px;

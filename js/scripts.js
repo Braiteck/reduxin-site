@@ -3,6 +3,69 @@ $(() => {
 	WW = $(window).width()
 
 
+	// Статьи
+	if ($('.articles .swiper').length) {
+		new Swiper('.articles .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 24,
+					slidesPerView: 1,
+				},
+				768: {
+					spaceBetween: 24,
+					slidesPerView: 2
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 3
+				},
+				1440: {
+					spaceBetween: 28,
+					slidesPerView: 3
+				},
+				1900: {
+					spaceBetween: 36,
+					slidesPerView: 3
+				}
+			},
+			on: {
+				init: swiper => {
+					setTimeout(() => {
+						setHeight($(swiper.$el).find('.article'))
+					})
+				},
+				resize: swiper => {
+					setTimeout(() => {
+						setHeight($(swiper.$el).find('.article'))
+					})
+				}
+			}
+		})
+	}
+
+
 	// Смена блоков на галвной
 	fadeInNotice()
 

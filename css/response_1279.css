@@ -1225,6 +1225,13 @@
     }
 
 
+    .articles .swiper-button-prev,
+    .articles .swiper-button-next
+    {
+        display: none;
+    }
+
+
     .articles .article
     {
         border-radius: 20px;

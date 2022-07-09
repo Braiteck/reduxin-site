@@ -1,0 +1,124 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #07389f;
+
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: 52px;
+    height: 52px;
+    margin: auto;
+
+    transition: color .2s linear;
+    transform: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-button-prev
+{
+    left: -72px;
+}
+
+.swiper-button-next
+{
+    right: -72px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 32px;
+    height: 32px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-top: 3px solid;
+    border-left: 3px solid;
+}
+
+.swiper-button-next:after
+{
+    transform: rotate(-225deg);
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 12px;
+
+    pointer-events: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+    border: 2px solid #b34992;
+    border-radius: 50%;
+    background: #b34992;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 11px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    border-color: #b34992;
+    background: #fff;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}

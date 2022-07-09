@@ -1812,6 +1812,17 @@
     }
 
 
+    .articles .swiper-button-prev
+    {
+        left: -48px;
+    }
+
+    .articles .swiper-button-next
+    {
+        right: -48px;
+    }
+
+
     .articles .row
     {
         margin-bottom: -24px;
